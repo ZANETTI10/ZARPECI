@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <cbc:ID>FE-2291</cbc:ID>
+  <cbc:IssueDate>2026-09-20</cbc:IssueDate>
+  <cac:AccountingSupplierParty><cac:Party><cac:PartyTaxScheme>
+    <cbc:RegistrationName>Trilladora Oriente Antioqueño S.A.S.</cbc:RegistrationName>
+    <cbc:CompanyID schemeID="7" schemeName="31">901223114</cbc:CompanyID>
+  </cac:PartyTaxScheme></cac:Party></cac:AccountingSupplierParty>
+  <cac:LegalMonetaryTotal><cbc:LineExtensionAmount currencyID="COP">264000000.00</cbc:LineExtensionAmount></cac:LegalMonetaryTotal>
+  <cac:InvoiceLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="KGM">16000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">264000000.00</cbc:LineExtensionAmount>
+    <cac:Item><cbc:Description>Café verde excelso sin tostar</cbc:Description></cac:Item>
+  </cac:InvoiceLine>
+</Invoice>
