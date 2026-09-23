@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zarpe CI</title>
+<meta name="description" content="Software para Comercializadoras Internacionales: Certificados al Proveedor, plazo de exportación, DEX, inventario exento, alertas e informe anual.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="login" class="login" hidden>
+  <form id="flogin" class="logincard" novalidate>
+    <div class="logo dark">ZARPE<small>Comercializadora Internacional</small></div>
+    <div class="field"><label for="lemail">Correo</label><input id="lemail" type="email" autocomplete="username" required></div>
+    <div class="field"><label for="lpass">Contraseña</label><input id="lpass" type="password" autocomplete="current-password" required></div>
+    <div class="err" id="lerr"></div>
+    <button class="btn primary" type="submit" id="lbtn">Entrar</button>
+  </form>
+</section>
+
+<div class="app" id="app" hidden>
+  <aside>
+    <div class="logo">ZARPE<small>Comercializadora Internacional</small></div>
+    <nav id="nav">
+      <a href="#panel" data-v="panel">Panel</a>
+      <a href="#certificados" data-v="certificados">Certificados al Proveedor</a>
+      <a href="#exportaciones" data-v="exportaciones">Exportaciones (DEX)</a>
+      <a href="#inventario" data-v="inventario">Inventario</a>
+      <a href="#alertas" data-v="alertas">Alertas <span class="badge" id="nb" hidden></span></a>
+      <a href="#informe" data-v="informe">Informe anual</a>
+    </nav>
+    <div class="company" id="company"></div>
+  </aside>
+  <main id="main"><p class="note">Cargando…</p></main>
+</div>
+<div id="layer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
